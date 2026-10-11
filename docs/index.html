@@ -1,1 +1,476 @@
-"<h1>My Portfolio</h1>" 
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+	<link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
+	<link rel="apple-touch-icon" href="img/favicon-180.png">
+	<link rel="shortcut icon" href="img/favicon-32.png">
+	<meta name="theme-color" content="#D01C1F">
+	<meta name="author" content="Brendon T Makurumure">
+	<meta name="description" content="Brendon T Makurumure — Data Analyst and Data Science Manager leading Generative AI at Capital One. 6+ years shipping real-time LLM, RAG, and NLP systems to production.">
+	<meta name="keywords" content="Brendon T Makurumure, Data Analyst, Data Science Manager, Generative AI, LLM, RAG, NLP, MLOps, Applied Scientist, Capital One">
+	<title>Brendon T Makurumure — Data Analyst</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">	<link rel="stylesheet" href="css/linearicons.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/chrome.css">
+	<link rel="stylesheet" href="css/site.css">
+	<style>
+		.hero-avatar{width:88px;height:88px;border-radius:50%;object-fit:cover;object-position:center 20%;display:block;margin-bottom:20px;border:3px solid #fff;box-shadow:0 8px 22px rgba(17,20,38,.16);outline:2px solid rgba(99,102,241,.35);outline-offset:3px;}
+	</style>
+	<!-- Arms the reveal transitions before first paint; without JS the
+	     content simply renders visible. -->
+	<script>if(!(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches))document.documentElement.className+=' js-reveal';</script>
+</head>
+
+<body class="page-home">
+
+	<header class="site-header">
+		<div class="wrap">
+			<a class="brand" href="index.html">
+				<img src="img/favicon.svg" alt="">
+				<span class="brand-lockup">
+					<span class="brand-name">Brendon T Makurumure</span>
+					<span class="brand-kicker">Data Analyst</span>
+				</span>
+			</a>
+			<button class="nav-toggle" type="button" data-nav-toggle aria-label="Menu" aria-expanded="false"><span class="lnr lnr-menu"></span></button>
+			<nav class="nav" data-nav-list>
+				<a class="nav-link is-current" href="index.html">Home</a>
+				<a class="nav-link" href="about.html">About</a>
+				<a class="nav-link" href="projects.html">Projects</a>
+				<!--a class="nav-link" href="huckleberry.html">Huck</a-->
+				<span class="nav-div"></span>
+				<a class="nav-resume" href="HarrisonJansmaResume.pdf" target="_blank">R&eacute;sum&eacute;</a>
+			</nav>
+		</div>
+		<div class="header-strip"></div>
+	</header>
+
+	<!-- Hero -->
+	<section class="hero grid-bg">
+		<div class="wrap">
+			<div>
+				<img class="hero-avatar" src="img/crop.jpg" alt="Brendon T Makurumure">
+				<div class="status-chip">
+					<span class="live-dot"></span>
+					<span>Data Analyst</span>
+				</div>
+				<h1 class="hero-h1">Brendon T<br>Makurumure</h1>
+				<p class="hero-lead">I build generative-AI systems that reach production — real-time LLM tools, RAG, and NLP at scale — and lead the teams that ship them.</p>
+				<div class="stats">
+					<div>
+						<div class="stat-num">6+</div>
+						<div class="stat-lbl">Years in applied AI/ML</div>
+					</div>
+					<div>
+						<div class="stat-num">Real-time</div>
+						<div class="stat-lbl">GenAI in production</div>
+					</div>
+					<div>
+						<div class="stat-num">LLM &middot; RAG</div>
+						<div class="stat-lbl">NLP systems at scale</div>
+					</div>
+				</div>
+				<div class="btn-row">
+					<a class="btn btn--grad btn--lg" href="#work">View portfolio</a>
+					<a class="btn btn--ghost btn--lg" href="HarrisonJansmaResume.pdf" target="_blank">Resume</a>
+				</div>
+			</div>
+
+			<div class="diagram" data-reveal>
+				<div class="diagram-head">
+					<span class="diagram-head-label">contact-center genai &middot; architecture</span>
+					<span class="diagram-head-live"><span class="live-dot"></span>streaming</span>
+				</div>
+
+				<div class="node">
+					<div class="node-eyebrow">source</div>
+					<div class="node-title">Live customer call</div>
+				</div>
+
+				<div class="trunk"><span class="packet"></span></div>
+
+				<div class="node">
+					<div class="node-eyebrow">transport</div>
+					<div class="node-title">Streaming transcript &rarr; Kafka</div>
+				</div>
+
+				<div class="fan fan-out">
+					<i class="fan-stem fan-stem--top"></i>
+					<i class="fan-bar"></i>
+					<i class="fan-leg fan-leg--l"></i>
+					<i class="fan-leg fan-leg--c"></i>
+					<i class="fan-leg fan-leg--r"></i>
+					<span class="packet packet--branch packet--l"></span>
+					<span class="packet packet--branch packet--c"></span>
+					<span class="packet packet--branch packet--r"></span>
+				</div>
+
+				<div class="model-row">
+					<div class="model-node"><b>Agentic<br>summarization</b><span>GPT &middot; judge</span></div>
+					<div class="model-node"><b>Procedure<br>RAG</b><span>pgvector</span></div>
+					<div class="model-node"><b>Frustration<br>detection</b><span>LLM</span></div>
+				</div>
+
+				<div class="fan fan-in">
+					<i class="fan-leg fan-leg--l"></i>
+					<i class="fan-leg fan-leg--c"></i>
+					<i class="fan-leg fan-leg--r"></i>
+					<i class="fan-bar"></i>
+					<i class="fan-stem fan-stem--bottom"></i>
+					<span class="packet"></span>
+				</div>
+
+				<div class="node node--final">
+					<div class="node-eyebrow">delivered mid-conversation</div>
+					<div class="node-title">Servicing agent desktop</div>
+				</div>
+				<div class="diagram-caption">The shape of three production systems below — one live audio stream, three models, sub-second delivery.</div>
+			</div>
+		</div>
+	</section>
+	
+	
+
+	
+	<!-- 01 Selected work -->
+	<section id="work">
+		<div class="wrap pad-work">
+			<div class="sechead sechead--work" data-reveal>
+				<div>
+					<div class="kicker">01 — Selected work</div>
+					<h2>Systems in production</h2>
+				</div>
+				<p>Flagship generative-AI systems I've taken from prototype to production at Capital One — starting with a public, analogous solution built with Deepgram and OpenAI tools you can try yourself.</p>
+			</div>
+
+			<div class="featured featured--home" data-reveal>
+				<div>
+					<span class="featured-badge"><span class="play-tri"></span>Live demo &middot; you can try this one</span>
+					<h3>Live Call Copilot</h3>
+					<p>A public rebuild of the shape of the three systems below, running live in your browser. Talk into your mic — or play a sample call — and watch a two-voice transcript, self-drafting notes, RAG-retrieved procedure docs, and a sub-second frustration alert, all from a single WebSocket. Deepgram + OpenAI composed into a real-time product; no proprietary anything.</p>
+					<div class="pill-row">
+						<span class="pill pill--lg">Next.js</span>
+						<span class="pill pill--lg">Deepgram</span>
+						<span class="pill pill--lg">OpenAI</span>
+						<span class="pill pill--lg">pgvector</span>
+						<span class="pill pill--lg">Railway</span>
+					</div>
+					<div class="btn-row">
+						<a class="btn btn--grad" href="https://agentassistdemo.harrisonjansma.com/" target="_blank">Open the live demo</a>
+						<a class="btn btn--ghost" href="call-copilot.html">Read the write-up</a>
+					</div>
+				</div>
+
+				<div class="browser">
+					<div class="browser-bar">
+						<span class="browser-dot"></span>
+						<span class="browser-dot"></span>
+						<span class="browser-dot"></span>
+						<span class="browser-url">agentassistdemo.harrisonjansma.com</span>
+					</div>
+					<div class="browser-body">
+						<img src="img/call-copilot.png" alt="Live Call Copilot — two-voice transcript, self-drafting notes, RAG procedure docs, and a frustration alert">
+						<button class="demo-launch" type="button" data-demo-open>
+							<span class="demo-launch-pill"><span class="play-tri play-tri--lg"></span>Run it here</span>
+							<span class="demo-launch-note">opens the real app full-screen</span>
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="rows">
+				<a class="row-link" href="summarization.html" data-reveal>
+					<span class="row-index">01</span>
+					<span>
+						<span class="row-cat">Generative AI</span>
+						<span class="row-title">Real-Time Call Summarization</span>
+						<span class="pill-row">
+							<span class="pill">GPT-4</span>
+							<span class="pill">Kafka</span>
+							<span class="pill">Python</span>
+							<span class="pill">AWS Lambda</span>
+						</span>
+					</span>
+					<span class="row-desc">An agentic GPT reasoning pipeline on Kafka that auto-drafts servicing-agent notes mid-call, with an LLM "agent-as-a-judge" review stage before anything reaches the agent.</span>
+					<span class="row-metrics">
+						<span><b>Real-time</b><span>Mid-call notes</span></span>
+						<span><b>Agentic</b><span>Draft + review</span></span>
+						<span><b>In pilot</b><span>Governed rollout</span></span>
+					</span>
+				</a>
+
+				<a class="row-link" href="rag.html" data-reveal>
+					<span class="row-index">02</span>
+					<span>
+						<span class="row-cat">Retrieval &middot; RAG</span>
+						<span class="row-title">Live Procedure RAG</span>
+						<span class="pill-row">
+							<span class="pill">RAG</span>
+							<span class="pill">pgvector</span>
+							<span class="pill">Embeddings</span>
+							<span class="pill">Python</span>
+						</span>
+					</span>
+					<span class="row-desc">A retrieval-augmented generation system that runs vector-embedding retrieval over live call transcripts to surface the right procedure and training documents to agents in real time.</span>
+					<span class="row-metrics">
+						<span><b>Real-time</b><span>Mid-conversation</span></span>
+						<span><b>Vector search</b><span>Procedure docs</span></span>
+					</span>
+				</a>
+
+				<a class="row-link" href="sentiment.html" data-reveal>
+					<span class="row-index">03</span>
+					<span>
+						<span class="row-cat">Real-Time NLP</span>
+						<span class="row-title">Frustrated-Customer Detection</span>
+						<span class="pill-row">
+							<span class="pill">LLMs</span>
+							<span class="pill">PyTorch</span>
+							<span class="pill">Kafka</span>
+						</span>
+					</span>
+					<span class="row-desc">Capital One's first real-time AI alert system — streaming LLM sentiment over live calls at scale, alerting managers to de-escalate in real time.</span>
+					<span class="row-metrics">
+						<span><b>Real-time</b><span>Live alerting</span></span>
+						<span><b>At scale</b><span>Across the business</span></span>
+					</span>
+				</a>
+			</div>
+
+			<div class="rows-more">
+				<a class="btn btn--ghost" href="projects.html">See all projects</a>
+			</div>
+		</div>
+	</section>
+
+	
+
+	<!-- 02 What I work on -->
+	 <!--<section class="banded band-offset">
+		<div class="wrap pad-band">
+			<div class="sechead sechead--plain" data-reveal>
+				<div>
+					<div class="kicker">02 — What I work on</div>
+					<h2>From research to real-time production</h2>
+					<p class="sechead-sub">The problems I love solving.</p>
+				</div>
+			</div>
+			<div class="grid-six" data-reveal>
+				<div>
+					<span class="icon-tile lnr lnr-magic-wand"></span>
+					<h4>Generative AI</h4>
+					<p>Agentic LLM pipelines, RAG, and prompt/eval systems that augment thousands of users live, with measurable business outcomes.</p>
+				</div>
+				<div>
+					<span class="icon-tile lnr lnr-bubble"></span>
+					<h4>Real-Time NLP</h4>
+					<p>Sentiment, complaint, and intent detection over streaming call transcripts — with sub-second alerting for de-escalation.</p>
+				</div>
+				<div>
+					<span class="icon-tile lnr lnr-checkmark-circle"></span>
+					<h4>LLM Evaluation</h4>
+					<p>LLM-as-a-judge, offline &amp; online evaluation, and observability for non-deterministic systems in production.</p>
+				</div>
+				<div>
+					<span class="icon-tile lnr lnr-layers"></span>
+					<h4>ML Systems at Scale</h4>
+					<p>Low-latency, real-time streaming inference on Kafka, AWS Lambda, DynamoDB, and Snowflake.</p>
+				</div>
+				<div>
+					<span class="icon-tile lnr lnr-chart-bars"></span>
+					<h4>Applied ML &amp; Credit</h4>
+					<p>Auto-loan underwriting models decisioning loans at large scale, plus reinforcement-learning credit-policy optimization.</p>
+				</div>
+				<div>
+					<span class="icon-tile lnr lnr-users"></span>
+					<h4>Technical Leadership</h4>
+					<p>Leading ML engineers and data scientists, setting technical objectives with VP- and EVP-level stakeholders.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	-->
+	
+
+	<!-- 03 Skills & tooling -->
+	 <!--<section>
+		<div class="wrap pad-skills">
+			<div class="sechead sechead--plain" data-reveal>
+				<div>
+					<div class="kicker">03 — Skills &amp; tooling</div>
+					<h2>The stack I reach for</h2>
+				</div>
+				<p>Taking models to production — tap a skill to read the case study.</p>
+			</div>
+			<div class="grid-skills" data-reveal>
+				<div class="skill-card">
+					<div class="skill-head">
+						<span class="icon-tile lnr lnr-magic-wand"></span>
+						<h4>GenAI &amp; LLMs</h4>
+					</div>
+					<div class="micro">Case studies</div>
+					<div class="skill-links">
+						<a class="skill-link" href="summarization.html"><span>Agentic Pipelines</span><i>&rarr;</i></a>
+						<a class="skill-link" href="rag.html"><span>RAG &amp; Vector Search</span><i>&rarr;</i></a>
+						<a class="skill-link" href="complaint.html"><span>LLM-as-a-Judge</span><i>&rarr;</i></a>
+						<a class="skill-link" href="call-copilot.html"><span>Live Demo</span><i>&rarr;</i></a>
+					</div>
+					<div class="skill-tools">
+						<div class="micro">Tools</div>
+						<div class="pill-row">
+							<span class="chip-tool">Claude Code</span>
+							<span class="chip-tool">OpenAI</span>
+							<span class="chip-tool">RAG</span>
+							<span class="chip-tool">pgvector</span>
+							<span class="chip-tool">LLM-as-Judge</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="skill-card">
+					<div class="skill-head">
+						<span class="icon-tile lnr lnr-bubble"></span>
+						<h4>ML &amp; NLP</h4>
+					</div>
+					<div class="micro">Case studies</div>
+					<div class="skill-links">
+						<a class="skill-link" href="sentiment.html"><span>Real-Time Sentiment</span><i>&rarr;</i></a>
+						<a class="skill-link" href="complaint.html"><span>Complaint Detection</span><i>&rarr;</i></a>
+						<a class="skill-link" href="emotion.html"><span>Emotion Classification</span><i>&rarr;</i></a>
+						<a class="skill-link" href="anomaly.html"><span>Anomaly Detection</span><i>&rarr;</i></a>
+					</div>
+					<div class="skill-tools">
+						<div class="micro">Tools</div>
+						<div class="pill-row">
+							<span class="chip-tool">PyTorch</span>
+							<span class="chip-tool">Hugging Face</span>
+							<span class="chip-tool">scikit-learn</span>
+							<span class="chip-tool">DistilBERT</span>
+							<span class="chip-tool">TensorFlow</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="skill-card">
+					<div class="skill-head">
+						<span class="icon-tile lnr lnr-layers"></span>
+						<h4>Systems &amp; Leadership</h4>
+					</div>
+					<div class="micro">Case studies</div>
+					<div class="skill-links">
+						<a class="skill-link" href="sentiment.html"><span>Real-time streaming</span><i>&rarr;</i></a>
+						<a class="skill-link" href="underwriting.html"><span>Auto-Loan Underwriting</span><i>&rarr;</i></a>
+						<a class="skill-link" href="credit-policy.html"><span>RL Credit Policy</span><i>&rarr;</i></a>
+						<a class="skill-link" href="teaching.html"><span>Teaching</span><i>&rarr;</i></a>
+					</div>
+					<div class="skill-tools">
+						<div class="micro">Tools</div>
+						<div class="pill-row">
+							<span class="chip-tool">Kafka</span>
+							<span class="chip-tool">AWS Lambda</span>
+							<span class="chip-tool">DynamoDB</span>
+							<span class="chip-tool">Snowflake</span>
+							<span class="chip-tool">Splunk</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	-->
+	
+
+	<!-- 04 About me -->
+	 <!--<section class="banded">
+		<div class="wrap about-grid">
+			<div class="photo-col" data-reveal>
+				<img src="img/harrison.png" alt="Brendon T Makurumure">
+				<div class="socials">
+					<a class="social" href="https://www.linkedin.com/in/harrisonjansma" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+					<a class="social" href="https://github.com/harrisonjansma" target="_blank" title="GitHub"><i class="fa fa-github"></i></a>
+					<a class="social" href="https://medium.com/@harrisonjansma" target="_blank" title="Medium"><i class="fa fa-medium"></i></a>
+				</div>
+			</div>
+			<div class="about-body" data-reveal>
+				<div class="kicker">04 — About me</div>
+				<p class="pull-quote">I'm a Data Analyst and Data Science Manager at Capital One, where I lead Generative AI for the contact centers — LLM-powered, agentic tools that augment thousands of servicing agents live, mid-conversation.</p>
+				<p>Over six years I've taken applied AI from prototype to production: real-time NLP, RAG, low-latency streaming inference, and the credit-risk ML that decisions loans at large scale.</p>
+				<p>What drives me is making a product measurably better for the people using it. Outside work: science fiction (Dune above all), strategy games, and time with my wife Amy and our dog Huck.</p>
+				<div class="btn-row">
+					<a class="btn btn--grad" href="about.html">More about me</a>
+					<a class="btn btn--ghost" href="huckleberry.html">Meet Huck</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	-->
+	
+
+	<footer class="site-footer">
+		<div class="wrap footer-grid">
+			<div class="footer-col">
+				<div class="footer-brand">
+					<img src="img/favicon.svg" alt="">
+					<span>Brendon T Makurumure</span>
+				</div>
+				<p>Data Analyst. Open to conversations about generative AI and applied ML.</p>
+				<a class="footer-email" href="mailto:brendonmak33@gmail.com>brendonmak33@gmail.com</a>
+			</div>
+			<div class="footer-col">
+				<div class="micro">Pages</div>
+				<div class="footer-links">
+					<a class="is-current" href="index.html">Home</a>
+					<a href="about.html">About</a>
+					<a href="projects.html">Projects</a>
+					<a href="HarrisonJansmaResume.pdf" target="_blank">Resume<span class="ext-arrow">&#8599;</span></a>
+				</div>
+			</div>
+			<div class="footer-col">
+				<div class="micro">Elsewhere</div>
+				<div class="footer-links">
+					<a href="https://www.linkedin.com/in/harrisonjansma" target="_blank">LinkedIn <span class="ext-arrow">&#8599;</span></a>
+					<a href="https://github.com/brendon4488" target="_blank">GitHub <span class="ext-arrow">&#8599;</span></a>
+				</div>
+			</div>
+		</div>
+		<div class="wrap">
+			<div class="footer-bottom">
+				<span>&copy; <script>document.write(new Date().getFullYear());</script> Brendon T Makurumure</span>
+				<span>Hand-built with HTML, CSS &amp; JavaScript &middot; GitHub Pages</span>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Full-screen live demo. The iframe src is deferred to data-src so
+	     the demo host is only contacted on request; the "open in a new tab"
+	     escape hatch stays because the host may refuse framing. -->
+	<div class="overlay" data-demo hidden>
+		<div class="overlay-bar">
+			<div class="overlay-id">
+				<img src="img/favicon.svg" alt="">
+				<span class="overlay-title">Live Call Copilot</span>
+				<span class="overlay-url">agentassistdemo.harrisonjansma.com</span>
+			</div>
+			<div class="overlay-actions">
+				<a class="overlay-out" href="https://agentassistdemo.harrisonjansma.com/" target="_blank">Open in a new tab &#8599;</a>
+				<button class="overlay-close" type="button" data-demo-close>Close &#10005;</button>
+			</div>
+		</div>
+		<iframe data-src="https://agentassistdemo.harrisonjansma.com" title="Live Call Copilot demo" allow="microphone"></iframe>
+	</div>
+
+	<script src="js/site.js"></script>
+</body>
+
+<!-- Mirrored from harrisonjansma.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 23 Sep 2026 06:13:39 GMT -->
+</html>
